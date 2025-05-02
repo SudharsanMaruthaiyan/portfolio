@@ -189,7 +189,8 @@ const Projects = () => {
   return (
     <div
       ref={pageRef}
-      className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 py-16 px-4 flex flex-col items-center" id="projects"
+      className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-800 py-16 flex flex-col items-center"
+      id="projects"
     >
       <h2 className="project-title text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-6">
         My Projects
@@ -199,7 +200,7 @@ const Projects = () => {
         a passion for great user experience.
       </p>
       {/* ...rest of your code... */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full px-[5%] md:px-[10%]">
         {projects.map((project, idx) => (
           <ProjectCard project={project} key={idx} idx={idx} />
         ))}

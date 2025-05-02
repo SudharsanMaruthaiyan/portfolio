@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <div className="2xl:container mx-auto sticky top-0 z-50 border-b" id="home">
       <nav className="bg-slate-900 text-white shadow-lg w-full px-[5%] md:px-[10%] relative">
-        <div className="container mx-auto px-4 py-5 flex items-center justify-between">
+        <div className="container mx-auto py-5 flex items-center justify-between">
           {/* Logo/Brand */}
           <div className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             Sudharsan M

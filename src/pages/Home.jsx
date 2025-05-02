@@ -106,7 +106,7 @@ const Home = () => {
           </div>
 
           {/* Content Container */}
-          <div className=" grid grid-cols-1 md:grid-cols-4 px-4 items-center">
+          <div className=" grid grid-cols-1 md:grid-cols-4 items-center">
             {/* Left: Hero Text */}
             <div className="max-w-2xl md:col-span-3">
               <h1 className="hero-title text-5xl md:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400 mb-6 leading-tight text-wrap lg:text-nowrap">
@@ -132,13 +132,13 @@ const Home = () => {
 
               {/* Animated Contact Me Button */}
               <a
-                href="mailto:sudharsanmaruthaiyan@gmail.com"
+                href="mailto:sudharsanmaruthaiyan@gmail.com?subject=Contact%20From%20Portfolio&body=Hello%20Sudharsan%2C%0AI%20am%20interested%20in%20connecting%20with%20you."
                 className="cta-button relative inline-block px-10 py-4 font-bold text-lg rounded-full text-white bg-gradient-to-r from-cyan-400 to-purple-500 shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400 group"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   Contact Me
                   <svg
-                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1 group-hover:-rotate-12"
+                    className="w-5 h-5 transform-gpu transition-transform duration-300 group-hover:translate-x-1 group-hover:-rotate-12"
                     fill="none"
                     stroke="currentColor"
                     strokeWidth={2}
@@ -151,9 +151,8 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                {/* Animated Glow Border */}
                 <span
-                  className="absolute inset-0 rounded-full pointer-events-none border-2 border-cyan-400 opacity-60 blur-lg animate-pulse group-hover:border-purple-400 transition-colors duration-300"
+                  className="absolute inset-0 rounded-full pointer-events-none border-2 border-cyan-400 opacity-60 blur-md animate-pulse group-hover:border-purple-400 transition-colors duration-300 z-0"
                   aria-hidden="true"
                 />
               </a>
