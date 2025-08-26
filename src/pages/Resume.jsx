@@ -11,14 +11,14 @@ const education = [
   {
     degree: "B.Sc. Computer Science",
     school: "St. Joseph's College, Tiruchirappalli, Tamilnadu",
-    year: "Jun 2022 - May 2025 (Pursuing)",
-    details: "Currently pursuing B.Sc. Computer Science.",
+    year: "Jun 2022 - May 2025",
+    details: "CGPA: 70%",
   },
   {
     degree: "HSC",
     school: "St. James Matriculation School, Tiruchirappalli",
     year: "Jun 2020 - Jun 2022",
-    details: "Scored 70% in the board exam.",
+    details: "Scored 70%",
   },
 ];
 
@@ -31,17 +31,24 @@ const certificates = [
 
 const experience = [
   {
+    role: "Front-End Developer",
+    company: "VR Della IT Service",
+    year: "Jun 2025 – Present",
+    details:
+      "Working as a Front-End developer"
+  },
+  {
     role: "Full Stack Developer & Mentor",
     company: "Revamp Academy (Remote)",
-    year: "Jun 2024 – Present",
+    year: "Jun 2024 – 2025",
     details:
-      "Working as a full stack developer. Developed LMS websites and dynamic/static sites using the MERN stack.",
+      "Working as a full stack developer. Developed LMS websites and dynamic/static sites using the MERN stack",
   },
   {
     role: "Front-End Developer & Tester (Intern)",
     company: "Maac Technologies",
     year: "May 2024 – Jun 2024",
-    details: "Designed and built front-end pages, updated and tested websites.",
+    details: "Designed and built front-end pages, updated and tested websites",
   },
 ];
 
@@ -297,7 +304,7 @@ const Resume = () => {
 
       {/* Experience */}
       <section className="experience-section w-full max-w-3xl mb-10">
-        <h3 className="text-2xl font-bold text-white mb-3">Work Experience</h3>
+        <h3 className="text-2xl font-bold text-white mb-3">Internship Experience</h3>
         <ul className="space-y-5">
           {experience.map((exp, idx) => (
             <li
@@ -316,19 +323,6 @@ const Resume = () => {
           ))}
         </ul>
       </section>
-
-      {/* Projects */}
-      {/* <section className="resume-section w-full max-w-3xl mb-10">
-        <h3 className="text-2xl font-bold text-white mb-3">Projects</h3>
-        <ul className="space-y-3">
-          {projects.map((proj, idx) => (
-            <li key={idx}>
-              <span className="font-semibold text-cyan-400">{proj.name}:</span>{" "}
-              <span className="text-slate-300">{proj.description}</span>
-            </li>
-          ))}
-        </ul>
-      </section> */}
 
       {/* Awards */}
       <section className="awards-section w-full max-w-3xl mb-10">
@@ -383,7 +377,7 @@ const Resume = () => {
 
       {/* Download Resume Button */}
       <a
-        href="Resume-M.pdf"
+        href="Sudharsan.pdf"
         download
         className="mt-6 px-8 py-3 rounded-full font-bold bg-gradient-to-r from-cyan-400 to-purple-500 text-white shadow-lg hover:scale-105 transition-transform duration-300"
       >
